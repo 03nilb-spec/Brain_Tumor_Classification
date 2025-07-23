@@ -32,6 +32,15 @@ if uploaded_file is not None:
 
     # Predict
     prediction = model.predict(img_array)
-    predicted_class = class_names[np.argmax(prediction)]
+    predicted_index = np.argmax(prediction)
+    predicted_class = class_names[predicted_index]
+    confidence_score = float(np.max(prediction)) * 100
 
-    st.markdown(f"### Predicted Tumor Type: `{predicted_class}`")
+    st.markdown(f"### 🧠 Predicted Tumor Type: `{predicted_class}`")
+    st.markdown(f"**Confidence Score:** {confidence_score:.2f}%")
+
+
+    st.write("#### All Class Probabilities:")
+    for i, prob in enumerate(prediction[0]):
+        st.write(f"{class_names[i]}: {prob:.2%}")
+
