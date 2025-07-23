@@ -1,5 +1,10 @@
 # Brain_Tumor_Classification
 Deep learning-based brain tumor classification using MRI images with Streamlit deployment.
+
+## Live Demo
+Try the web app here:  
+👉 [Brain Tumor Classification Streamlit App](https://braintumorclassification-7rmjvhrnwtp2g69v78fklc.streamlit.app/)
+
 ## Features
 - Custom CNN and Pretrained (Transfer Learning) models.
 - Model performance comparison.
