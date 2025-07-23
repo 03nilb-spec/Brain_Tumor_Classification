@@ -19,11 +19,11 @@ Deep learning-based brain tumor classification using MRI images with Streamlit d
 git clone https://github.com/03nilb-spec/Brain_Tumor_Classification.git
 cd Brain_Tumor_Classification
 
-### Set up Environment 
+### 2. Set up Environment 
 python -m venv venv
 venv\Scripts\activate   
 
-### Install Dependencies
+### 3. Install Dependencies
 pip install -r requirements.txt
 
 ### 4 Run the Streamlit App
